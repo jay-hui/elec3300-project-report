@@ -22,41 +22,226 @@
         }
 
         .video {
-            height: 600px;
+            height: 300px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
-    <div class="card col-md-10 col-lg-8 mx-auto my-5 p-4">
-        <h2>ELEC 3300 Final Project</h2>
-        <h3>Title: Robotic Page Turner</h3>
-        <h3>Group: 15</h3>
+    <div class="card col-md-10 col-lg-9 mx-auto my-5 p-5">
+        <section id="cover">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h2>ELEC 3300 Final Project</h2>
+                    <h3>Title: Robotic Page Turner</h3>
+                    <h3>Group: 15</h3>
+                    <br><br>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Name</th>
+                                <td>HUI, Cheuk Hei</td>
+                                <td>CHOW, Hui Yau</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email</th>
+                                <td>
+                                    <a href="mailto:chhuiah@connect.ust.hk?subject=ELEC3300 Feedback">
+                                        chhuiah@connect.ust.hk
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="mailto:hychowak@connect.ust.hk?subject=ELEC3300 Feedback">
+                                        hychowak@connect.ust.hk
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 col-lg-6 px-5">
+                    <a href="img/cover.jpg"><img src="img/cover.jpg" alt="Cover"></a>
+                </div>
+            </div>
+        </section>
 
-        <div class="row">
-            <table class="table">
+        <section id="documents" class="my-2">
+            <div class="row">
+                <h4>Documents</h4>
+            </div>
+            <div class="row">
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>Proposal PowerPoint</td>
+                            <td>
+                                <a href="/doc/elec3300_proposal.pptx" class="btn btn-primary" role="button"
+                                    aria-disabled="true">
+                                    View
+                                </a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Project Summary</td>
+                            <td>
+                                <a href="/doc/elec3300_projectsummary.pdf" class="btn btn-primary" role="button"
+                                    aria-disabled="true">
+                                    View
+                                </a>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="projectfiles" class="my-2">
+            <div class="row">
+                <h4>Project files</h4>
+            </div>
+            <div class="row">
+                <p>
+                    We have used two STM32 processors for this project, one for the pedal and the other for the robotic
+                    arm.
+                </p>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Module</th>
+                        <th scope="col">.ioc CubeMX File</th>
+                        <th scope="col">.zip Project File</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">Name</th>
-                        <td>HUI, Cheuk Hei</td>
-                        <td>CHOW, Hui Yau</td>
+                        <th scope="row">Foot Pedal</th>
+                        <td>
+                            <a href="/doc/pedal.ioc" class="btn btn-primary" role="button" aria-disabled="true">
+                                pedal.ioc
+                            </a>
+                        </td>
+                        <td>
+                            <a href="/doc/pedal.zip" class="btn btn-primary" role="button" aria-disabled="true">
+                                pedal.zip
+                            </a>
+                        </td>
                     </tr>
                     <tr>
-                        <th scope="row">Email</th>
-                        <td>chhuiah@connect.ust.hk</td>
-                        <td>hychowak@connect.ust.hk</td>
+                        <th scope="row">Robotic Arm</th>
+                        <td>
+                            <a href="/doc/arm.ioc" class="btn btn-primary" role="button" aria-disabled="true">
+                                arm.ioc
+                            </a>
+                        </td>
+                        <td>
+                            <a href="/doc/arm.zip" class="btn btn-primary" role="button" aria-disabled="true">
+                                arm.zip
+                            </a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </section>
 
-        <div class="video">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Il3gaL_sEWQ" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
+        <section id="photos" class="my-2">
+            <div class="row">
+                <h4>Photos</h4>
+            </div>
+            <div class="row">
+                <p>Click any one of them to view or download the image file.</p>
+            </div>
+            <div class="row m-2 no-gutters">
+                <div class="col-12 col-md-8 px-2">
+                    <a href="img/product.jpg"><img src="img/product.jpg" alt="Product"></a>
+                </div>
+                <div class="col-12 col-md-4 px-2">
+                    <a href="img/armpins.jpg"><img src="img/armpins.jpg" alt="Arm Pins"></a>
+                </div>
+            </div>
+            <div class="row m-2 no-gutters">
+                <div class="col-12 col-md-4 px-1">
+                    <a href="img/electromagnet.jpg"><img src="img/electromagnet.jpg" alt="Electromagnet"></a>
+                </div>
+                <div class="col-12 col-md-2 px-1">
+                    <a href="img/ldr.jpg"><img src="img/ldr.jpg" alt="LDR-controlled LEDs"></a>
+                </div>
+                <div class="col-12 col-md-2 px-1">
+                    <a href="img/pedal.jpg"><img src="img/pedal.jpg" alt="Pedal"></a>
+                </div>
+                <div class="col-12 col-md-4 px-1">
+                    <a href="img/verticalmotor.jpg"><img src="img/verticalmotor.jpg" alt="Vertical Motors"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="my-2">
+            <div class="row">
+                <h4>Videos</h4>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="row my-2">
+                        <div class="col-8">
+                            <p>Proposal Presentation Video:</p>
+                        </div>
+                        <div class="col-4">
+                            <a href="/doc/elec3300_proposal.mp4" class="btn btn-primary" role="button"
+                                aria-disabled="true">
+                                View .mp4 file
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KyANeLIkf1o"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row my-2">
+                        <div class="col-8">
+                            <p>Project Final Presentation Video:</p>
+                        </div>
+                        <div class="col-4">
+                            <a href="/doc/elec3300_demo.mp4" class="btn btn-primary" role="button" aria-disabled="true">
+                                View .mp4 file
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Il3gaL_sEWQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="other" class="my-3">
+            <div class="row">
+                <h4>Other Links</h4>
+            </div>
+            <div class="row">
+                <a href="https://github.com/jay-hui/elec3300-project" class="btn btn-dark" role="button"
+                    aria-disabled="true">
+                    Our GitHub repository
+                </a>
+            </div>
+        </section>
     </div>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
